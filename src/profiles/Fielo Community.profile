@@ -79,7 +79,7 @@
         <name>WorkDotComUserPerm</name>
     </userPermissions>
 	
-		<!-- Permissoes dos Campos do Objetos -->
+	<!-- Permissoes dos Campos do Objetos -->
 	
 	<!-- Agreement -->
     <fieldPermissions>
@@ -100,6 +100,50 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>FieloPLT__Agreement__c.FieloPLT__Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	
+	<!-- Answer -->
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Answer__c.FieloELR__AnswerOption__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Answer__c.FieloELR__ExternalKey__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Answer__c.FieloELR__TextValue__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	
+	<!-- AnswerOption -->
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__AnswerOption__c.FieloELR__AnswerOptionText__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__AnswerOption__c.FieloELR__IsCorrect__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__AnswerOption__c.FieloELR__MatchingText__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__AnswerOption__c.FieloELR__Order__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>false</editable>
+        <field>FieloELR__AnswerOption__c.FieloELR__OrderFormula__c</field>
         <readable>true</readable>
     </fieldPermissions>
 	
@@ -400,102 +444,114 @@
         <readable>true</readable>
     </fieldPermissions>
 	
-	<!-- Invoice -->
-	<fieldPermissions>
+	<!-- Course -->
+    <fieldPermissions>
         <editable>true</editable>
-        <field>FieloPRP__Invoice__c.FieloPRP__Amount__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-	<fieldPermissions>
-        <editable>false</editable>
-        <field>FieloPRP__Invoice__c.FieloPRP__Comments__c</field>
+        <field>FieloELR__Course__c.FieloELR__ActiveModules__c</field>
         <readable>true</readable>
     </fieldPermissions>
 	<fieldPermissions>
         <editable>true</editable>
-        <field>FieloPRP__Invoice__c.FieloPRP__Date__c</field>
+        <field>FieloELR__Course__c.FieloELR__Description__c</field>
         <readable>true</readable>
     </fieldPermissions>
 	<fieldPermissions>
         <editable>true</editable>
-        <field>FieloPRP__Invoice__c.FieloPRP__Description__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-	<fieldPermissions>
-        <editable>false</editable>
-        <field>FieloPRP__Invoice__c.FieloPRP__HasDetails__c</field>
+        <field>FieloELR__Course__c.FieloELR__EndDate__c</field>
         <readable>true</readable>
     </fieldPermissions>
 	<fieldPermissions>
         <editable>true</editable>
-        <field>FieloPRP__Invoice__c.FieloPRP__Image__c</field>
+        <field>FieloELR__Course__c.FieloELR__ExternalURL__c</field>
         <readable>true</readable>
     </fieldPermissions>
 	<fieldPermissions>
         <editable>true</editable>
-        <field>FieloPRP__Invoice__c.FieloPRP__InvoiceNumber__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-	<fieldPermissions>
-        <editable>false</editable>
-        <field>FieloPRP__Invoice__c.FieloPRP__Member__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-	<fieldPermissions>
-        <editable>false</editable>
-        <field>FieloPRP__Invoice__c.FieloPRP__Program__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-	<fieldPermissions>
-        <editable>false</editable>
-        <field>FieloPRP__Invoice__c.FieloPRP__RejectReason__c</field>
+        <field>FieloELR__Course__c.FieloELR__HasDependencies__c</field>
         <readable>true</readable>
     </fieldPermissions>
 	<fieldPermissions>
         <editable>true</editable>
-        <field>FieloPRP__Invoice__c.FieloPRP__Distributor__c</field>
+        <field>FieloELR__Course__c.FieloELR__Image__c</field>
         <readable>true</readable>
     </fieldPermissions>
 	<fieldPermissions>
         <editable>true</editable>
-        <field>FieloPRP__Invoice__c.FieloPRP__Status__c</field>
+        <field>FieloELR__Course__c.FieloELR__KeyDependencies__c</field>
         <readable>true</readable>
     </fieldPermissions>
 	<fieldPermissions>
         <editable>true</editable>
-        <field>FieloPRP__Invoice__c.FieloPRP__UniqueKeyField__c</field>
+        <field>FieloELR__Course__c.FieloELR__Order__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Course__c.FieloELR__Program__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Course__c.FieloELR__Segment__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Course__c.FieloELR__StartDate__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Course__c.FieloELR__Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Course__c.FieloELR__SubscriptionMode__c</field>
         <readable>true</readable>
     </fieldPermissions>
 	
-	<!-- InvoiceItem -->
+	<!-- CourseDependency -->
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__CourseDependency__c.FieloELR__ExternalKey__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	
+	<!-- CourseStatus -->
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__CourseStatus__c.FieloELR__ApprovedModules__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
 	<fieldPermissions>
         <editable>true</editable>
-        <field>FieloPRP__InvoiceItem__c.FieloPRP__Description__c</field>
+        <field>FieloELR__CourseStatus__c.FieloELR__CompletedDate__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__CourseStatus__c.FieloELR__Course__c</field>
         <readable>true</readable>
     </fieldPermissions>
 	<fieldPermissions>
         <editable>false</editable>
-        <field>FieloPRP__InvoiceItem__c.FieloPRP__Invoice__c</field>
+        <field>FieloELR__CourseStatus__c.FieloELR__Course_Accomplished__c</field>
         <readable>true</readable>
     </fieldPermissions>
 	<fieldPermissions>
         <editable>true</editable>
-        <field>FieloPRP__InvoiceItem__c.FieloPRP__Product__c</field>
+        <field>FieloELR__CourseStatus__c.FieloELR__ExternalKey__c</field>
         <readable>true</readable>
     </fieldPermissions>
 	<fieldPermissions>
         <editable>true</editable>
-        <field>FieloPRP__InvoiceItem__c.FieloPRP__Quantity__c</field>
+        <field>FieloELR__CourseStatus__c.FieloELR__NumberofTimesCompleted__c</field>
         <readable>true</readable>
     </fieldPermissions>
 	<fieldPermissions>
         <editable>false</editable>
-        <field>FieloPRP__InvoiceItem__c.FieloPRP__TotalPrice__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-	<fieldPermissions>
-        <editable>true</editable>
-        <field>FieloPRP__InvoiceItem__c.FieloPRP__UnitPrice__c</field>
+        <field>FieloELR__CourseStatus__c.FieloELR__Progress__c</field>
         <readable>true</readable>
     </fieldPermissions>
 	
@@ -747,6 +803,182 @@
         <readable>true</readable>
     </fieldPermissions>
 	
+	<!-- Module -->
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Module__c.FieloELR__ApprovalGrade__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Module__c.FieloELR__AttemptsAllowed__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Module__c.FieloELR__AttemptsAllowedPerQuestion__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Module__c.FieloELR__Content__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Module__c.FieloELR__ContentType__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Module__c.FieloELR__Course__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Module__c.FieloELR__Description__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Module__c.FieloELR__ExternalURL__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Module__c.FieloELR__HasDependencies__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Module__c.FieloELR__Image__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Module__c.FieloELR__IsActive__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Module__c.FieloELR__KeyDependencies__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Module__c.FieloELR__Order__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Module__c.FieloELR__PenaltyMode__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Module__c.FieloELR__QuestionDisplayMode__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Module__c.FieloELR__QuestionPool__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Module__c.FieloELR__NumberOfQuestions__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Module__c.FieloELR__ShuffleQuestions__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>false</editable>
+        <field>FieloELR__Module__c.FieloELR__TotalValue__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Module__c.FieloELR__WeightedQuestions__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	
+	<!-- ModuleDependency -->
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__ModuleDependency__c.FieloELR__ExternalKey__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	
+	<!-- ModuleResponse -->
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__ModuleResponse__c.FieloELR__NumberOfAttempt__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__ModuleResponse__c.FieloELR__CorrectQuestions__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__ModuleResponse__c.FieloELR__CourseStatus__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__ModuleResponse__c.FieloELR__ExternalKey__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__ModuleResponse__c.FieloELR__GradePercent__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__ModuleResponse__c.FieloELR__GradeValue__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__ModuleResponse__c.FieloELR__IncorrectQuestions__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__ModuleResponse__c.FieloELR__IsSubmitted__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>false</editable>
+        <field>FieloELR__ModuleResponse__c.FieloELR__LastChance__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__ModuleResponse__c.FieloELR__IsApproved__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__ModuleResponse__c.FieloELR__NumberofApprove__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__ModuleResponse__c.FieloELR__SubmitDate__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__ModuleResponse__c.FieloELR__TotalQuestions__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	
 	<!-- Points -->
 	<fieldPermissions>
         <editable>false</editable>
@@ -852,21 +1084,6 @@
     </fieldPermissions>
 	<fieldPermissions>
         <editable>false</editable>
-        <field>FieloPLT__Program__c.FieloPRP__ProductInjectQuery__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-	<fieldPermissions>
-        <editable>false</editable>
-        <field>FieloPLT__Program__c.FieloPRP__RequestInvoiceAuthorization__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-	<fieldPermissions>
-        <editable>false</editable>
-        <field>FieloPLT__Program__c.FieloPRP__RequestInvoiceProducts__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-	<fieldPermissions>
-        <editable>false</editable>
         <field>FieloPLT__Program__c.FieloPLT__RequestMemberAuthorization__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -952,6 +1169,85 @@
 	<fieldPermissions>
         <editable>true</editable>
         <field>FieloPLT__Promotion__c.FieloPLT__Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	
+	<!-- Question -->
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>FieloELR__Question__c.FieloELR__CorrectAnswerOptions__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Question__c.FieloELR__CorrectWeight__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Question__c.FieloELR__IncorrectWeight__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Question__c.FieloELR__Order__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>false</editable>
+        <field>FieloELR__Question__c.FieloELR__OrderFormula__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Question__c.FieloELR__PenaltyPerAttempt__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Question__c.FieloELR__QuestionText__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Question__c.FieloELR__ShuffleAnswerOptions__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__Question__c.FieloELR__TotalAnswerOptions__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	
+	<!-- QuestionResponse -->
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__QuestionResponse__c.FieloELR__ExternalKey__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__QuestionResponse__c.FieloELR__IsCorrect__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__QuestionResponse__c.FieloELR__IsSubmitted__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__QuestionResponse__c.FieloELR__NumberOfAttempt__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__QuestionResponse__c.FieloELR__PartialGradeValue__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>FieloELR__QuestionResponse__c.FieloELR__TextValue__c</field>
         <readable>true</readable>
     </fieldPermissions>
 	
@@ -1318,11 +1614,6 @@
     </fieldPermissions>
 	<fieldPermissions>
         <editable>false</editable>
-        <field>FieloPLT__Transaction__c.FieloPRP__Invoice__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-	<fieldPermissions>
-        <editable>false</editable>
         <field>FieloPLT__Transaction__c.FieloPLT__IsOffline__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1387,6 +1678,23 @@
 		<allowRead>true</allowRead>
 		<object>FieloPLT__Agreement__c</object>
 	</objectPermissions>
+	
+	<objectPermissions>
+		<allowCreate>true</allowCreate>
+		<allowDelete>false</allowDelete>
+		<allowEdit>true</allowEdit>
+		<allowRead>true</allowRead>
+		<object>FieloELR__Answer__c</object>
+	</objectPermissions>
+	
+	<objectPermissions>
+		<allowCreate>false</allowCreate>
+		<allowDelete>false</allowDelete>
+		<allowEdit>false</allowEdit>
+		<allowRead>true</allowRead>
+		<object>FieloELR__AnswerOption__c</object>
+	</objectPermissions>
+	
 	<objectPermissions>
 		<allowCreate>false</allowCreate>
 		<allowDelete>false</allowDelete>
@@ -1436,11 +1744,19 @@
 	</objectPermissions>
 	
 	<objectPermissions>
-		<allowCreate>true</allowCreate>
+		<allowCreate>false</allowCreate>
 		<allowDelete>false</allowDelete>
-		<allowEdit>true</allowEdit>
+		<allowEdit>false</allowEdit>
 		<allowRead>true</allowRead>
-		<object>FieloPRP__Invoice__c</object>
+		<object>FieloELR__Course__c</object>
+	</objectPermissions>
+	
+	<objectPermissions>
+		<allowCreate>false</allowCreate>
+		<allowDelete>false</allowDelete>
+		<allowEdit>false</allowEdit>
+		<allowRead>true</allowRead>
+		<object>FieloELR__CourseDependency__c</object>
 	</objectPermissions>
 	
 	<objectPermissions>
@@ -1448,7 +1764,7 @@
 		<allowDelete>false</allowDelete>
 		<allowEdit>true</allowEdit>
 		<allowRead>true</allowRead>
-		<object>FieloPRP__InvoiceItem__c</object>
+		<object>FieloELR__CourseStatus__c</object>
 	</objectPermissions>
 	
 	<objectPermissions>
@@ -1488,6 +1804,30 @@
 		<allowDelete>false</allowDelete>
 		<allowEdit>false</allowEdit>
 		<allowRead>true</allowRead>
+		<object>FieloELR__Module__c</object>
+	</objectPermissions>
+	
+	<objectPermissions>
+		<allowCreate>false</allowCreate>
+		<allowDelete>false</allowDelete>
+		<allowEdit>false</allowEdit>
+		<allowRead>true</allowRead>
+		<object>FieloELR__ModuleDependency__c</object>
+	</objectPermissions>
+	
+	<objectPermissions>
+		<allowCreate>true</allowCreate>
+		<allowDelete>false</allowDelete>
+		<allowEdit>true</allowEdit>
+		<allowRead>true</allowRead>
+		<object>FieloELR__ModuleResponse__c</object>
+	</objectPermissions>
+	
+	<objectPermissions>
+		<allowCreate>false</allowCreate>
+		<allowDelete>false</allowDelete>
+		<allowEdit>false</allowEdit>
+		<allowRead>true</allowRead>
 		<object>FieloPLT__Point__c</object>
 	</objectPermissions>
 	
@@ -1513,6 +1853,22 @@
 		<allowEdit>false</allowEdit>
 		<allowRead>true</allowRead>
 		<object>FieloPLT__Promotion__c</object>
+	</objectPermissions>
+	
+	<objectPermissions>
+		<allowCreate>false</allowCreate>
+		<allowDelete>false</allowDelete>
+		<allowEdit>false</allowEdit>
+		<allowRead>true</allowRead>
+		<object>FieloELR__Question__c</object>
+	</objectPermissions>
+	
+	<objectPermissions>
+		<allowCreate>true</allowCreate>
+		<allowDelete>true</allowDelete>
+		<allowEdit>true</allowEdit>
+		<allowRead>true</allowRead>
+		<object>FieloELR__QuestionResponse__c</object>
 	</objectPermissions>
 	
 	<objectPermissions>
