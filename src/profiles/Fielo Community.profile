@@ -1641,11 +1641,6 @@
     </fieldPermissions>
 	<fieldPermissions>
         <editable>false</editable>
-        <field>FieloPLT__Tracker__c.FieloPRP__Invoice__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-	<fieldPermissions>
-        <editable>false</editable>
         <field>FieloPLT__Tracker__c.FieloPLT__MissionMember__c</field>
         <readable>true</readable>
     </fieldPermissions>
