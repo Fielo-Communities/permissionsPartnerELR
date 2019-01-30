@@ -10,9 +10,9 @@
 		},
 		{
 					
-			"type":"package",
-			"version":"1.70",
-			"name":"FieloELR"
+			"type":"linkRepository",
+			"version":"master",
+			"name":"Fielo-Apps/fieloelr"
 		}
 	]
 }
